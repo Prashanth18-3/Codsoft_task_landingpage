@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dream Destinations - Explore India</title>
+  <style>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/4/4b/India_Gate_in_New_Delhi_03-2016_img3.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-text {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background: #ff5722;
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #e64a19;
+  }
+  
+  /* Destinations */
+  .destinations {
+    padding: 80px 50px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  .destinations h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .destination-card {
+    background: #fafafa;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .destination-card h3 {
+    padding: 20px;
+  }
+  
+  /* Why Choose Us */
+  .why-choose {
+    padding: 80px 50px;
+    text-align: center;
+  }
+  
+  .why-choose h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .reasons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .reason {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .reason h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  /* Packages */
+  .packages {
+    padding: 80px 50px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .packages h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+  
+  .package-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .package-card {
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .package-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .package-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .price {
+    display: block;
+    font-size: 20px;
+    color: #ff5722;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 30px;
+    background: #333;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Discover Incredible India</h1>
+      <p>Explore breathtaking destinations and hidden treasures with us.</p>
+      <a href="#destinations" class="btn">Start Exploring</a>
+    </div>
+  </section>
+  
+  <!-- Top Destinations -->
+  <section class="destinations" id="destinations">
+    <h2>SCROLL DOWN TO KNOW MORE ABOUT PLACES<br>
+        <br>
+        Top Destinations</h2>
+    <div class="destination-grid">
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/500px-Taj_Mahal_%28Edited%29.jpeg" alt="Taj Mahal, Agra">
+        <h3>Taj Mahal, Agra</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/3e/36/95/baga-sea-beach.jpg?w=800&h=600&s=1" alt="Goa Beach">
+        <h3>Goa Beaches</h3>
+      </div>
+      <div class="destination-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/500px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg" alt="Amber Fort, Jaipur">
+        <h3>Jaipur, Rajasthan</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-choose">
+    <h2>Why Travel With Us?</h2>
+    <div class="reasons">
+      <div class="reason">
+        <h4>Expert Guides</h4>
+        <p>Professional local guides for a truly authentic experience.</p>
+      </div>
+      <div class="reason">
+        <h4>Affordable Packages</h4>
+        <p>Best prices with personalized tour planning just for you.</p>
+      </div>
+      <div class="reason">
+        <h4>24/7 Support</h4>
+        <p>Friendly assistance anytime during your travels.</p>
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dream Destinations. All rights reserved.</p>
+  </footer>
+  <section class="india-places">
+    <h2><strong>Top Places in India</strong></h2><br>
+    <br>
+    <div class="places-grid">
+      <div class="place-card">
+        <h3><em>NOTE: Get the details by clicking on images</h3></em><br>
+
+        <h3>TAJ MAHAL,AGRA</h3>
+      <a href="https://upstdc.co.in/Web/agra_tourism"><img src="https://www.tajmahal.gov.in/images/banners/1.jpg" alt="Taj Mahal"></a>
+      </div><br>
+      <br>
+      <div class="place-card">
+        <h3>JAIPUR,RAJASTHAN</h3>
+       <a href="https://obms-tourist.rajasthan.gov.in/place-details/Amber-Fort"> <img src="https://www.taleof2backpackers.com/wp-content/uploads/2018/05/Amer-Fort_Jaipur_Rajasthan-5.jpg" alt="Jaipur"></a>
+      </div><br>
+      <br>
+      <div class="place-card">
+        <h3>GOA BEACHES</h3>
+        <a href="https://goa-tourism.com/"><img src="https://www.shoreexcursionsgroup.com/img/tour/ASGOBEACHBEERTOUR-2.jpg" alt="Goa"></a>
+      </div><br>
+      <br>
+      <div class="place-card">
+        <h3>KERALA BACKWATERS</h3>
+        <a href="https://www.paradise-kerala.com/kerala-tourism?gad_source=1&gbraid=0AAAAADoodO57JFoNeekcGLHiw7y4NHBmn&gclid=Cj0KCQjw5azABhD1ARIsAA0WFUGW4CHSAGWxj76LpS9O0lzvwMD88g2QtkzgqRvXz5SMIUbxSTWjwxcaAoFTEALw_wcB"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgd8IHqUAg4gmQ1LdL4MVgSYf2hI5uVPlQjhOg6FcI5FfYL_D9H9T50KsPfvRC24Up7qvzp9M7K-88OGFhKzDrN1FvwiYpSSL0BUA8RATWPoMqP_VhXncMefy4FfCJ6dbyYvegy-z1MBv2d/s1600/2.jpg" alt="Kerala"></a>
+      </div><br>
+      <br>
+      <div class="place-card">
+        <h3>VARANASI:THE SPIRITUAL CITY</h3>
+        <a href="https://vdavns.com/tourist"><img src="https://cdn.getyourguide.com/img/location/6023dbcb71489.jpeg/99.jpg" alt="Varanasi"></a>
+      </div><br>
+      <br>
+      <div class="place-card">
+        <h3>LADAKH</h3>
+        <a href="https://www.lehladakhtourism.com/"><img src="https://images.blacktomato.com/2024/07/Ladakh3.jpg?auto=compress%2Cformat&fit=crop&h=800&ixlib=php-3.3.1&q=82&w=1520&s=5451be49358d2a7f8142ecf8fbfc2f8d" alt="ladakh"></a>
+      </div>
+    </div>
+  </section>
+  <section class="packages">
+    <h2>Our Travel Packages</h2>
+    <div class="package-cards">
+      <div class="package-card">
+        <h3>Golden Triangle Tour</h3>
+        <p>Visit Delhi, Agra, and Jaipur in a 5-day cultural adventure.</p>
+        <div class="price">Starting from $32,000</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+      <style>/* Packages Section */
+        .packages {
+          padding: 80px 50px;
+          text-align: center;
+          background: #f5f7fa;
+        }
+        
+        .packages h2 {
+          font-size: 36px;
+          margin-bottom: 50px;
+          color: #333;
+        }
+        
+        .package-cards {
+          display: flex;
+          gap: 30px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        
+        .package-card {
+          background: white;
+          border-radius: 20px;
+          padding: 30px;
+          box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+          width: 300px;
+          transition: transform 0.3s;
+        }
+        
+        .package-card:hover {
+          transform: translateY(-10px);
+        }
+        
+        .package-card h3 {
+          font-size: 22px;
+          margin-bottom: 15px;
+          color: #00bfa6;
+        }
+        
+        .package-card p {
+          font-size: 16px;
+          margin-bottom: 20px;
+          color: #666;
+        }
+        
+        .price {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 20px;
+          color: #333;
+        }
+        
+        .package-card .btn {
+          background: #00bfa6;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 30px;
+          font-size: 16px;
+        }
+        
+        .package-card .btn:hover {
+          background: #00a892;
+        }
+        </style>
+  
+      <div class="package-card">
+        <h3>Kerala Backwaters</h3>
+        <p>Relax on a 7-day luxury houseboat journey through Kerala's backwaters.</p>
+        <div class="price">Starting from $17,000</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+  
+      <div class="package-card">
+        <h3>Goa Beach Escape</h3>
+        <p>4-day getaway to Goa's sunny beaches, nightlife, and water sports fun.</p>
+        <div class="price">Starting from $25,000</div>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+  </section>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the contact form */
+.contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form headings */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Input field styles */
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Success message */
+.hidden {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <div class="error-message"></div>
+      </div>
+
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <div class="error-message"></div>
+      </div>
+
+      <div class="input-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <div class="error-message"></div>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <div id="form-response"class="hidden">Thank you for your message!</div>
+    </form>
+  </div>
+ <center><h1><strong>THANK YOU</strong></h1></center>
+</body>
+</html>
+</body>
+</html>
